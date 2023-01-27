@@ -15,6 +15,12 @@ body {
   background-size: cover;
 }
 
+nav {
+  position: absolute;
+  bottom: 130px;
+  margin-left: 120px;
+}
+
 h1 {
   height: 500px;
   color: white;
@@ -34,23 +40,37 @@ h2{
 
 .logo {
   width: 230px;
-  margin-bottom: 10px;
   position: relative;
-  bottom: 120px;
+  margin-bottom: -15px;
+  bottom: 150px;
   left: 80%;
 }
 
-nav, .articles {
+.articles {
   display: inline-block;
+  margin-left: 50px;
+}
+.about-articles {
+  display: inline-block;
+  position: absolute;
+  margin-top: 85px;
+  margin-left: 50px;
 }
 
 a {
   display: block;
-  margin-right: 300px;
+  margin-bottom: 40px;
 }
 
 article {
   margin-bottom: 10px;
+}
+
+.contact {
+  display: inline-block;
+  margin-left: 50px;
+  position: relative;
+  bottom: 45px;
 }
 
 footer {
@@ -60,4 +80,9 @@ footer {
   font-size: 20px;
   text-align: center;
   padding: 8px;
+}
+
+.about-footer {
+  margin-top: 180px;
+
 }
