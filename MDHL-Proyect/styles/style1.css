@@ -15,12 +15,6 @@ body {
   background-size: cover;
 }
 
-nav {
-  position: absolute;
-  bottom: 130px;
-  margin-left: 120px;
-}
-
 h1 {
   height: 500px;
   color: white;
@@ -28,6 +22,7 @@ h1 {
   font-size: 50px;
   text-shadow: 2px 2px 20px #4c4433;
   padding-left: 20px;
+  position: relative;
 }
 
 h2{
@@ -38,24 +33,25 @@ h2{
   text-align: center;
 }
 
+nav {
+  position: absolute;
+  bottom: 130px;
+  margin-left: 120px;
+}
+
 .logo {
   width: 230px;
-  position: relative;
-  margin-bottom: -15px;
-  bottom: 150px;
+  position: absolute;
+  bottom: 300px;
   left: 80%;
 }
 
 .articles {
   display: inline-block;
   margin-left: 50px;
-}
-
-.about-articles {
-  display: inline-block;
-  position: absolute;
-  margin-top: 85px;
-  margin-left: 50px;
+  position: relative;
+  top: 100px;
+  left: 200px;
 }
 
 a {
@@ -63,27 +59,12 @@ a {
   margin-bottom: 40px;
 }
 
-article {
-  margin-bottom: 10px;
-}
-
-.contact {
-  display: inline-block;
-  margin-left: 50px;
-  position: relative;
-  bottom: 45px;
-}
 
 footer {
-  margin-top: 40px;
+  margin-top: 145px;
   background-color: #ca8f05;
   color: white;
   font-size: 20px;
   text-align: center;
   padding: 8px;
 }
-
-.about-footer {
-  margin-top: 180px;
-
-} 
