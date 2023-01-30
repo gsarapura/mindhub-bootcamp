@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-size: 20px;
+ }
+
+html {
+  background-color: #444c5d;
+  color: #fff8f8;
+}
+
+
+h1 {
+  background-color: #2d75b5;
+  font-weight: bold;
+  font-size: 50px;
+  font-style: italic;
+  text-shadow: 2px 2px 1px #4c4433;
+}
+
+nav {
+  margin: 20px;
+  transition: margin-right 2s;
+}
+
+h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.blue-button {
+  background-color: #3177a1;
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white;
+  box-shadow: 2px 2px #818181;
+  border-radius: 10px;
+  /*Animation*/
+  animation-name: colors;
+  animation-duration: 4s;
+  
+}
+
+@keyframes colors {
+  0%   {background-color: #3177a1;}
+  25%  {background-color: #d8cd3a;}
+  50%  {background-color: #31a16d;}
+  100% {background-color: green;}
+}
+
+.logo {
+  width: 230px;
+  transition: margin-right 2s;
+}
+
+h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.arrange-content {
+  padding: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.a-email {
+  color: black;
+  background-color: white;
+}
+
+footer {
+  background-color: #c69f42;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  position: absolute;
+  bottom:0;
+  width: 100%;
+}
+
