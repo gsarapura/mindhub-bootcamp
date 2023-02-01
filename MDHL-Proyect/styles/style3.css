@@ -7,9 +7,15 @@
   font-size: 20px;
  }
 
-html {
+html, body {
+  height: 100%;
+}
+
+body {
   background-color: #444c5d;
   color: #fff8f8;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -80,8 +86,12 @@ footer {
   font-size: 20px;
   font-weight: bold;
   font-style: italic;
-  position: absolute;
-  bottom:0;
-  width: 100%;
+}
+
+.footer-position {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: flex-end;
 }
 
