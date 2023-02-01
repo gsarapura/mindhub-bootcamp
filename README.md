@@ -18,3 +18,13 @@ Para esta entrega deben presentarnos:
 --> un CSS para el segundo diseño
 --> un CSS para el tercer diseño
 
+## Sprint 3 MDHL:
+Por plataforma pueden ver otro mail de Tom y la solicitud de la modificación del sitio web para su liga de hockey (MDHL)
+
+Quiere que agreguemos 2 paginas nuevas una de terminos y condiciones y otra con una tabla de partidos
+
+Con que diseño van a trabajar, depende de cual les gusto mas. Preferentemente usen el de ustedes.
+
+Para esta entrega deben presentarnos: 
+--> los 5 HTML estructurados y modificados con los selectores de CSS que correspondan
+--> Los datos están en el mail, que les envió Tom
