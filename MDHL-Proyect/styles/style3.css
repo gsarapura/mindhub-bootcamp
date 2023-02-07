@@ -7,7 +7,11 @@
 
 html, body {
   height: 100%;
-  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
 }
 
 body {
@@ -46,6 +50,7 @@ h2 {
   color: white;
   box-shadow: 2px 2px #818181;
   border-radius: 10px;
+  margin-inline: 5px;
   /*Animation*/
   animation-name: colors;
   animation-duration: 4s;
@@ -70,6 +75,32 @@ h3 {
   text-transform: uppercase;
   font-size: 30px;
   text-decoration: underline;
+}
+
+article > h3 {
+  all: inherit;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: justify;
+  text-transform: uppercase;
+}
+
+.style-inputs { 
+  all:unset;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox-section{
+  all: unset;
+  display: flex;
+}
+
+.checkbox-section > div {
+  width: 25%;
 }
 
 .arrange-content {
@@ -137,6 +168,14 @@ th, td {
   justify-content: space-between;
 }
 
+.map-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+
 
 footer {
   background-color: #c69f42;
@@ -151,4 +190,40 @@ footer {
   flex-direction: column;
   flex-grow: 2;
   justify-content: flex-end;
+}
+
+label, input:hover {
+  cursor: pointer;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+/*StackOverflow:*/
+input[type=radio] {
+  appearance: none;
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+}
+
+input[type=radio]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  transform: scale(0);
+  transform-origin: bottom left;
+  background-color: #fff;
+  clip-path: polygon(13% 50%, 34% 66%, 81% 2%, 100% 18%, 39% 100%, 0 71%);
+}
+
+input[type=radio]:checked::before {
+  transform: scale(1);
+}
+input[type=radio]:checked{
+  background-color:   #0075FF;
+  border: 2px solid #0075FF;
 }
