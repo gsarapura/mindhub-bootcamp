@@ -14,6 +14,12 @@ html, body {
   justify-content: center;
 }
 
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 body {
   background-color: #444c5d;
   color: #fff8f8;
@@ -54,7 +60,6 @@ h2 {
   /*Animation*/
   animation-name: colors;
   animation-duration: 4s;
-  
 }
 
 @keyframes colors {
@@ -87,6 +92,10 @@ article > h3 {
   text-transform: uppercase;
 }
 
+.index-h3 {
+  margin-top: 10px;
+}
+
 .style-inputs { 
   all:unset;
   margin-bottom: 20px;
@@ -104,7 +113,7 @@ article > h3 {
 }
 
 .arrange-content {
-  padding: 20px;
+  padding-inline: 100px;
 }
 
 p {
@@ -176,6 +185,15 @@ th, td {
   margin-bottom: 50px;
 }
 
+.button-submit {
+  display: inline-block;
+  background-color: #448596;
+  padding: 10px;
+  width: 150px;
+  color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+}
 
 footer {
   background-color: #c69f42;
@@ -198,6 +216,34 @@ label, input:hover {
 
 .cursor-default {
   cursor: default;
+}
+
+/* Repetir el estilo para el checkbox*/
+input[type=checkbox] {
+  appearance: none;
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+}
+
+input[type=checkbox]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  transform: scale(0);
+  transform-origin: bottom left;
+  background-color: #fff;
+  clip-path: polygon(13% 50%, 34% 66%, 81% 2%, 100% 18%, 39% 100%, 0 71%);
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+input[type=checkbox]:checked{
+  background-color:   #0075FF;
+  border: 2px solid #0075FF;
 }
 
 /*StackOverflow:*/
