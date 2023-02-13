@@ -9,17 +9,21 @@
   </head>
   <body>
     <header class="nav-header" >
-      <figure>
+      <figure class="figure-logo">
         <img src="./img/Logo_AZ.jpg" class="logo" alt="logo amazing events">
       </figure>
       
-      <nav>
+      <nav class="web-nav">
         <a href="./index.html" class="nav-button">Home</a>
         <a href="./upcoming-events.html" class="nav-button">Upcoming Events</a>
         <a href="./past-events.html" class="nav-button">Past Events</a>
         <a href="./contact.html" class="nav-button">Contact</a>
         <a href="./stats.html" class="nav-button">Stats</a>
       </nav>
+
+      <div class="nav-menu">
+        <p>Menu</p>
+      </div>
 
     </header>
 
@@ -59,9 +63,19 @@
             </div>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="checkbox-menu">
+            <div>
+              Categories
+            </div>
+          </fieldset>
+
+          <fieldset class="search-container">
             <input type="text" id="category" name="category" placeholder="category">
             <button type="submit">Search</button>
+          </fieldset>
+
+          <fieldset class="lens-container">
+            <img src="./img/maglens.png" class="lens-logo" alt="lens-search">
           </fieldset>
         </form>
         
